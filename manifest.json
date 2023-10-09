@@ -1,6 +1,6 @@
 {
-  "name": "chrome-plugin-demo",
-  "description": "Demo Extension to change background color!",
+  "name": "string-over",
+  "description": "字符串小工具!",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
