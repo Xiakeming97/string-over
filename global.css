@@ -1,0 +1,22 @@
+/* 清除按钮的默认外观 */
+button {
+  border: none; /* 清除边框 */
+  padding: 0; /* 清除内边距 */
+  background: none; /* 清除背景 */
+  cursor: pointer; /* 添加鼠标指针样式 */
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.bj-confirm{
+  background-color: #53a451;
+}
+.bj-copy{
+  background-color: #e19a3f;
+}
+.bj-shear{
+  background-color: #62acc8;
+}
+.bj-empty{
+  background-color: #ca5c54;
+}

@@ -1,0 +1,41 @@
+.warp{
+  width: 640px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+}
+#story {
+  resize: none; /* 禁止拉伸 */
+  width: 400px; /* 固定宽度 */
+  height: 80px; /* 固定高度 */
+  border-radius: 4px;
+  padding: 4px;
+}
+.textarea-warp{
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+.textarea-button{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.textarea-button button{
+  width: 68px;
+  height: 32px;
+}
+.over-warp{
+  flex: 1;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+}
+.over-warp button{
+  padding: 0px 12px;
+  height: 32px;
+  margin-right: 8px;
+}
