@@ -3,14 +3,13 @@
   height: 480px;
   display: flex;
   flex-direction: column;
-  background-color: pink;
 }
 #story {
   resize: none; /* 禁止拉伸 */
   width: 400px; /* 固定宽度 */
   height: 80px; /* 固定高度 */
   border-radius: 4px;
-  padding: 4px;
+  padding: 8px;
 }
 .textarea-warp{
   width: 100%;
@@ -29,13 +28,14 @@
 }
 .over-warp{
   flex: 1;
-  padding: 8px;
+  padding: 24px 0px;
   display: flex;
   flex-wrap: wrap;
-  background-color: aquamarine;
+  align-content: baseline;
 }
 .over-warp button{
   padding: 0px 12px;
   height: 32px;
-  margin-right: 8px;
+  margin-right: 12px;
+  margin-bottom: 16px;
 }
