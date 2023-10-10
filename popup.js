@@ -144,13 +144,13 @@ clearWhiteSpaceButton.addEventListener("click", () => {
 });
 
 // 点击按钮将文本清除符号
-clearSymbolButton.addEventListener("click", () => {
-  const currentText = textarea.value;
-  const uppercaseText = currentText.replace(/[!-~]/g, function(match,separator) {
-    return "";
-  });
-  textarea.value = uppercaseText;
-});
+// clearSymbolButton.addEventListener("click", () => {
+//   const currentText = textarea.value;
+//   const uppercaseText = currentText.replace(/[!-~]/g, function(match,separator) {
+//     return "";
+//   });
+//   textarea.value = uppercaseText;
+// });
 
 // 点击按钮将文本清除换行
 clearLineFeedButton.addEventListener("click", () => {
