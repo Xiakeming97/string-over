@@ -5,6 +5,10 @@ const shearButton = document.querySelector(".bj-shear");
 const emptyButton = document.querySelector(".bj-empty");
 const uppercaseButton = document.getElementById("all-uppercase");
 const lowercaseButton = document.getElementById("all-lowercase");
+/**单词首字母大写 */
+const capitaFirstLetterWord = document.getElementById("capita-first-letter-word");
+/**句首字母大写 */
+// const firstLetterSentenceCapita = document.getElementById("first-letter-sentence-capita");
 const spaceUnderInButton = document.getElementById("space-under-in");
 const underInSpaceTurnHumpButton = document.getElementById("under-in-space-turn-hump");
 const humpUnderInButton = document.getElementById("hump-under-in");
@@ -55,14 +59,29 @@ lowercaseButton.addEventListener("click", () => {
   textarea.value = uppercaseText;
 });
 
-// 点击按钮将文本空格转换为下划线
-spaceUnderInButton.addEventListener("click", () => {
+// // 句首字母大写（功能不好实现）
+// capitaFirstLetterWord.addEventListener("click", () => {
+//   const currentText = textarea.value;
+//   const uppercaseText = currentText.replace(/(^\w|\.\s\w)/g, letter => letter.toUpperCase());
+//   textarea.value = uppercaseText;
+// });
+
+
+// 单词首字母大写
+firstLetterSentenceCapita.addEventListener("click", () => {
   const currentText = textarea.value;
-  const uppercaseText = currentText.replace(' ','_')
+  const uppercaseText = currentText.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())
   textarea.value = uppercaseText;
 });
 
 // 点击按钮将文本空格转换为下划线
+spaceUnderInButton.addEventListener("click", () => {
+  const currentText = textarea.value;
+  const uppercaseText = currentText.replace(/\s/g,'_')
+  textarea.value = uppercaseText;
+});
+
+// 点击按钮将文本空格、下划线转化驼峰
 underInSpaceTurnHumpButton.addEventListener("click", () => {
   const currentText = textarea.value;
   const uppercaseText = currentText.replace(/(_|\s)([a-z])/g, function(match,separator, letter) {

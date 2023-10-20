@@ -1,7 +1,7 @@
 {
-  "name": "string-over",
+  "name": "字符串格式化",
   "description": "字符串小工具!",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
