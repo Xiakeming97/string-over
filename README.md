@@ -1,8 +1,12 @@
 # string-over
 Edge插件-字符串格式化工具
+[插件地址](https://microsoftedge.microsoft.com/addons/detail/oehpklonmekckgkfmmbkonaklpmpjfgf)
 
 ### 描述：
 字符串格式化 是一款强大的字符串格式化工具，它可以帮助你快速、轻松地对文本进行格式化，使其满足你的需求。无论是在编辑文档、编程代码还是其他文本处理任务中，字符串格式化 都能提供快捷的解决方案。
+
+### 截图:
+![插件截图](https://s2.loli.net/2023/10/20/hEyxgDzufVAc2Hk.png)
 
 ### 主要功能：
 
