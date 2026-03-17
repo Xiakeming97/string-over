@@ -44,9 +44,21 @@ const operationNames = {
   "clear-line-feed": "清除换行"
 };
 
+// 自动复制到剪贴板
+function autoCopyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    console.log("已自动复制到剪贴板");
+  }).catch(err => {
+    console.error("复制失败:", err);
+  });
+}
+
 // 保存历史记录
 function saveHistory(originalText, resultText, operationType) {
   if (!resultText || resultText === originalText) return;
+  
+  // 自动复制转换结果到剪贴板
+  autoCopyToClipboard(resultText);
   
   const record = {
     id: Date.now(),
